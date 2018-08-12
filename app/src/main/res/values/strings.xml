@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">woofer</string>
+    <string name="navSettings">Settings</string>
+    <string name="navBackToMenu">Main Menu</string>
+    <string name="navQuit">Exit</string>
+    <string name="action_settings">תפריט</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+
+    <string-array name="nav_titles">
+        <item>Title1</item>
+        <item>Title2</item>
+        <item>Title3</item>
+        <item>Title4</item>
+        <item>Title5</item>
+
+    </string-array>
+
+</resources>

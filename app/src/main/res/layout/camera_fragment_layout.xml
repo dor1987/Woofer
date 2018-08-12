@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+
+        android:layout_width="wrap_content"
+        android:layout_height="450dp"
+        android:src="@drawable/nalapic"
+        android:layout_gravity="center"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:layout_marginTop="20dp"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+           android:layout_gravity="center">
+
+        <ImageButton
+            android:id="@+id/cameraBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/camerabtn"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:contentDescription="TODO"
+            ></ImageButton>
+
+        <ImageButton
+            android:id="@+id/videoBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/videobtn"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:contentDescription="TODO"
+            android:layout_toRightOf="@+id/cameraBtn"
+            ></ImageButton>
+
+        <ImageButton
+            android:id="@+id/micBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/micbtn"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:contentDescription="TODO"
+            android:layout_toRightOf="@+id/videoBtn"
+            />
+
+
+    </RelativeLayout>
+</LinearLayout>

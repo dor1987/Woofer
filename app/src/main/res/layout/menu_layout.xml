@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Woofer"
+    android:textSize="80dp"
+    android:gravity="center"
+    android:textAlignment="center"
+    />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="20dp">
+
+
+        <TextView
+            android:id="@+id/foodlefttextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Food Left 87%"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:id="@+id/boneicon"
+            android:src="@drawable/bone"
+            android:layout_below="@+id/foodlefttextview"/>
+
+        />
+
+        <TextView
+            android:id="@+id/waterlefttextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Water Left 45%"
+            android:textSize="20dp"
+            android:layout_toRightOf="@+id/foodlefttextview"
+            android:textAlignment="center"
+            android:layout_marginLeft="30dp"
+            />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:src="@drawable/water"
+            android:layout_below="@+id/waterlefttextview"
+            android:layout_toRightOf="@+id/boneicon"
+            android:layout_marginLeft="70dp"/>
+
+        />
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/menuCameraButton"
+        android:text="Camera"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:textSize="30dp"
+        android:padding="15dp"
+        android:layout_marginBottom="5dp"
+        android:onClick="cameraBtnClicked"
+
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/menuMealSchedulingButton"
+        android:text="Meals Scheduling"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:textSize="30dp"
+        android:padding="15dp"
+        android:layout_marginBottom="5dp"
+
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/menuFeedMyDogButton"
+        android:text="Feed My Dog"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:textSize="30dp"
+        android:padding="15dp"
+        android:layout_marginBottom="5dp"
+
+
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/menuDogAnalyticsButton"
+        android:text="Dog's Analytics"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:textSize="30dp"
+        android:padding="15dp"
+        android:layout_marginBottom="5dp"
+        />
+
+
+
+</LinearLayout>
