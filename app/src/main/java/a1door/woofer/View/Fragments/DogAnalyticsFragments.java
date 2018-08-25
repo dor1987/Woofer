@@ -2,10 +2,12 @@ package a1door.woofer.View.Fragments;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import a1door.woofer.Adapter.ImageAdapter;
 import a1door.woofer.R;
 
 public class DogAnalyticsFragments extends android.support.v4.app.Fragment {
@@ -23,5 +25,15 @@ public class DogAnalyticsFragments extends android.support.v4.app.Fragment {
 
 
         return view;
+    }
+
+    @Override
+    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+        ViewPager viewPager = getActivity().findViewById(R.id.view_pager);
+
+        ImageAdapter adapter = new ImageAdapter(getContext());
+
+        viewPager.setAdapter(adapter);
     }
 }
