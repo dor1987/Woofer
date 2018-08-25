@@ -11,10 +11,22 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/analytic_tile"
+            android:textSize="45sp"
+            android:text="bla"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp"
+            />
 
         <android.support.v4.view.ViewPager
             android:id="@+id/view_pager"
             android:layout_width="match_parent"
+            android:layout_below="@id/analytic_tile"
             android:layout_height="match_parent">
 
         </android.support.v4.view.ViewPager>
