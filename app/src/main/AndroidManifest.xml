@@ -10,15 +10,28 @@
         android:screenOrientation="portrait"
         android:supportsRtl="false"
         android:theme="@style/AppTheme">
-        <activity android:name=".View.Activites.MainActivity"
+        <activity android:name=".View.Activites.LoginActivity"
             android:screenOrientation="portrait"
-            >
+                >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".View.Activites.MainActivity"
+            android:screenOrientation="portrait"
+            >
+        </activity>
+
+
+        <activity android:name=".View.Activites.SignInActivity"
+            android:screenOrientation="portrait"
+            >
+        </activity>
+
+
     </application>
 
 </manifest>

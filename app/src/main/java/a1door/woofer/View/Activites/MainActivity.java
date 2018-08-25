@@ -42,7 +42,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private DogMealsFragment dogMealsFragment;
     private DogAnalyticsFragments dogAnalyticsFragments;
     private SettingFragment settingFragment;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -60,6 +59,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         toggle.syncState();
 
         navigationView = (NavigationView) findViewById(R.id.navView);
+
+        Intent  intent =  getIntent();
+        ((TextView) navigationView.getHeaderView(0).findViewById(R.id.userName)).setText(intent.getExtras().getString("username"));
 
 
         navigationView.setNavigationItemSelectedListener(this);

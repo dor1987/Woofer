@@ -67,7 +67,6 @@ public class MenuFragment extends android.support.v4.app.Fragment implements onM
             public void onClick(View v)
             {
                 Toast.makeText(view.getContext(), "Food has been given", Toast.LENGTH_SHORT).show();
-
             }
         });
 

@@ -9,11 +9,11 @@
 
 
     <string-array name="nav_titles">
-        <item>Title1</item>
-        <item>Title2</item>
-        <item>Title3</item>
-        <item>Title4</item>
-        <item>Title5</item>
+        <item>Main Menu</item>
+        <item>Camera</item>
+        <item>Meals Scheduling</item>
+        <item>Dog's Analytics</item>
+        <item>Settings</item>
 
     </string-array>
 
