@@ -4,73 +4,131 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-<TextView
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:text="Woofer"
-    android:textSize="80dp"
-    android:gravity="center"
-    android:textAlignment="center"
-    />
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:src="@drawable/wooferlogo2"
+        android:layout_gravity="top"
+
+        />
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:layout_marginBottom="20dp">
+        android:gravity="center">
 
+    <RelativeLayout
+        android:id="@+id/foodleftRelativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
 
-        <TextView
-            android:id="@+id/foodlefttextview"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Food Left 87%"
-            android:textSize="20dp"
-            android:textAlignment="center"
+        <ImageView
+            android:id="@+id/foodleftimage"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/bone2"
+            android:layout_gravity="top"
             />
 
-        <android.support.v7.widget.AppCompatImageView
-            android:layout_width="100dp"
-            android:layout_height="50dp"
-            android:id="@+id/boneicon"
-            android:src="@drawable/bone"
-            android:layout_below="@+id/foodlefttextview"/>
-
-        />
-
         <TextView
-            android:id="@+id/waterlefttextview"
+            android:id="@+id/foodleftText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Water Left 45%"
+            android:layout_alignLeft="@+id/foodleftimage"
+            android:layout_alignTop="@+id/foodleftimage"
+            android:layout_alignRight="@+id/foodleftimage"
+            android:layout_alignBottom="@+id/foodleftimage"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="1dp"
+            android:gravity="center"
+            android:text="Food Left"
             android:textSize="20dp"
-            android:layout_toRightOf="@+id/foodlefttextview"
-            android:textAlignment="center"
-            android:layout_marginLeft="30dp"
-            />
+            android:textColor="#a0a0a0" />
 
-        <android.support.v7.widget.AppCompatImageView
-            android:layout_width="100dp"
-            android:layout_height="50dp"
-            android:src="@drawable/water"
-            android:layout_below="@+id/waterlefttextview"
-            android:layout_toRightOf="@+id/boneicon"
-            android:layout_marginLeft="70dp"/>
+        <TextView
+            android:id="@+id/foodleftPercentText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/foodleftimage"
+            android:layout_alignRight="@+id/foodleftimage"
+            android:layout_below="@id/foodleftText"
+            android:layout_alignTop="@+id/foodleftimage"
+            android:layout_alignBottom="@+id/foodleftimage"
+            android:layout_marginTop="60dp"
+            android:gravity="center"
+            android:text="87%"
+            android:textSize="30dp"
+            android:textColor="#191919" />
+    </RelativeLayout>
 
-        />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/foodleftRelativeLayout"
+            >
+
+
+            <ImageView
+                android:id="@+id/waterleftimage"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/waterdrop2"
+                />
+            <TextView
+                android:id="@+id/waterleftText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/waterleftimage"
+                android:layout_alignTop="@+id/waterleftimage"
+                android:layout_alignRight="@+id/waterleftimage"
+                android:layout_alignBottom="@+id/waterleftimage"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="1dp"
+                android:gravity="center"
+                android:text="Water Left"
+                android:textSize="20dp"
+                android:textColor="#a0a0a0" />
+
+            <TextView
+                android:id="@+id/waterleftPercentText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/waterleftimage"
+                android:layout_alignRight="@+id/waterleftimage"
+                android:layout_below="@id/waterleftText"
+                android:layout_alignTop="@+id/waterleftimage"
+                android:layout_alignBottom="@+id/waterleftimage"
+                android:layout_marginTop="60dp"
+                android:gravity="center"
+                android:text="46%"
+                android:textSize="30dp"
+                android:textColor="#191919" />
+        </RelativeLayout>
+
+
+
     </RelativeLayout>
 
     <Button
+        android:id="@+id/menuCameraButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/menuCameraButton"
-        android:text="Camera"
+        android:layout_marginBottom="10dp"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
-        android:textSize="30dp"
-        android:padding="15dp"
-        android:layout_marginBottom="5dp"
+        android:background="@drawable/mybutton"
+        android:fontFamily="monospace"
         android:onClick="cameraBtnClicked"
-
+        android:text="Camera"
+        android:padding="10dp"
+        android:textAppearance="@style/NewCourseColorHint"
+        android:textSize="30dp"
         />
 
     <Button
@@ -80,9 +138,11 @@
         android:text="Meals Scheduling"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
+        android:padding="10dp"
+        android:textAppearance="@style/NewCourseColorHint"
         android:textSize="30dp"
-        android:padding="15dp"
-        android:layout_marginBottom="5dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/mybutton"
 
         />
 
@@ -93,9 +153,11 @@
         android:text="Feed My Dog"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
+        android:padding="10dp"
+        android:textAppearance="@style/NewCourseColorHint"
         android:textSize="30dp"
-        android:padding="15dp"
-        android:layout_marginBottom="5dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/mybutton"
 
 
         />
@@ -107,9 +169,12 @@
         android:text="Dog's Analytics"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
+        android:padding="10dp"
+        android:textAppearance="@style/NewCourseColorHint"
         android:textSize="30dp"
-        android:padding="15dp"
-        android:layout_marginBottom="5dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/mybutton"
+
         />
 
 

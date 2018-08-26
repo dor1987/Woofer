@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/dogrdy2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        />
+
+<LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -11,9 +25,9 @@
     >
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/woofer_logo"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/wooferlogo"
         android:layout_gravity="top"
         />
 
@@ -27,13 +41,13 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center"
         android:layout_centerHorizontal="true"
         android:layout_centerInParent="true"
         android:layout_gravity="center"
-        android:textSize="30dp"
-        android:text="User name"
-        />
+        android:gravity="center"
+        android:text="User Name"
+        android:textSize="25dp"
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/userNameEditText"
@@ -55,7 +69,8 @@
         android:layout_centerHorizontal="true"
         android:layout_centerInParent="true"
         android:layout_gravity="center"
-        android:textSize="30dp"
+        android:textSize="25dp"
+        android:textStyle="bold"
         />
 
     <EditText
@@ -73,14 +88,16 @@
 
     <Button
         android:id="@+id/loginBtn"
-        android:layout_width="wrap_content"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:text="LogIn"
         android:layout_centerHorizontal="true"
         android:layout_centerInParent="true"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="20dp"
         android:layout_gravity="center"
         android:onClick="onLoginClicked"
+        android:background="@drawable/mybutton"
+        android:textAppearance="@style/NewCourseColorHint"
         />
 
     <TextView
@@ -92,20 +109,23 @@
         android:layout_centerInParent="true"
         android:layout_gravity="center"
         android:textSize="20dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="20dp"
         />
 
     <Button
         android:id="@+id/signInBtn"
-        android:layout_width="wrap_content"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:text="Sign In"
         android:layout_centerHorizontal="true"
         android:layout_centerInParent="true"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="5dp"
         android:layout_gravity="center"
         android:onClick="onSignInClicked"
+        android:background="@drawable/mybutton"
+        android:textAppearance="@style/NewCourseColorHint"
         />
 
 
 </LinearLayout>
+</RelativeLayout>
