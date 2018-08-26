@@ -18,7 +18,7 @@ public class ImageAdapter extends PagerAdapter {
 
 
             R.drawable.activity_diagram,
-            R.drawable.heat_diagram, 
+            R.drawable.heat_diagram,
             R.drawable.meals_diagram,
             R.drawable.pulse_diagram
 

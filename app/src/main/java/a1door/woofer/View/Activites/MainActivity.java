@@ -22,6 +22,7 @@ import a1door.woofer.Logic.Interfaces.onMenuButtonClickListener;
 import a1door.woofer.R;
 import a1door.woofer.View.Fragments.CameraFragment;
 import a1door.woofer.View.Fragments.DogAnalyticsFragments;
+import a1door.woofer.View.Fragments.DogListFragment;
 import a1door.woofer.View.Fragments.DogMealsFragment;
 import a1door.woofer.View.Fragments.MenuFragment;
 import a1door.woofer.View.Fragments.SettingFragment;
@@ -41,6 +42,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private CameraFragment cameraFragment;
     private DogMealsFragment dogMealsFragment;
     private DogAnalyticsFragments dogAnalyticsFragments;
+    private DogListFragment dogListFragment;
     private SettingFragment settingFragment;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -75,6 +77,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         dogMealsFragment = new DogMealsFragment();
         dogAnalyticsFragments = new DogAnalyticsFragments();
         settingFragment = new SettingFragment();
+        dogListFragment = new DogListFragment();
 
 
         menuFragment.registerMenuBtnsClickShowListeners(this);
@@ -114,7 +117,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 break;
 
             case 3:
-                fragment = dogAnalyticsFragments ;
+                fragment = dogListFragment ;
                 break;
 
             case 4:
@@ -200,4 +203,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         CurrentFragment = whereToGo;
         SetCurrentFragment();
     }
+
+
 }
