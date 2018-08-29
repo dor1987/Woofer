@@ -43,6 +43,11 @@
         <item name="android:color">@color/colorPrimary</item>
     </style>
 
+
+    <style name="CustomDialog" parent="@style/Theme.AppCompat.Light.Dialog">
+        <item name="android:windowNoTitle">false</item>
+    </style>
+
     <style name="DaysSwitchesTheme" parent="Theme.AppCompat.Light">
         <item name="colorSwitchThumbNormal">@color/IHWBrown</item>
         <item name="colorAccent">@color/colorPrimary</item>
