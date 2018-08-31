@@ -1,5 +1,7 @@
 package a1door.woofer.View.Fragments;
 
+import android.app.DialogFragment;
+import android.app.FragmentManager;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
@@ -66,7 +68,10 @@ public class MenuFragment extends android.support.v4.app.Fragment implements onM
             @Override
             public void onClick(View v)
             {
-                Toast.makeText(view.getContext(), "Food has been given", Toast.LENGTH_SHORT).show();
+              //  Toast.makeText(view.getContext(), "Food has been given", Toast.LENGTH_SHORT).show();
+                android.support.v4.app.FragmentManager fragmentManager = getFragmentManager();
+                MyDialogFragment dialogFragment =  new MyDialogFragment();
+                dialogFragment.show(fragmentManager, "dialog fragment");
             }
         });
 

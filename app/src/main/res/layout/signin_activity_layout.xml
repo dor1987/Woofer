@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/dogrdy"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        />
+
+<LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -27,6 +40,8 @@
         android:layout_gravity="center"
         android:textSize="25dp"
         android:text="User name"
+        android:textStyle="bold"
+
         />
 
     <EditText
@@ -50,6 +65,8 @@
         android:layout_centerInParent="true"
         android:layout_gravity="center"
         android:textSize="25dp"
+        android:textStyle="bold"
+
         />
 
     <EditText
@@ -74,6 +91,8 @@
         android:layout_centerInParent="true"
         android:layout_gravity="center"
         android:textSize="25dp"
+        android:textStyle="bold"
+
         />
 
     <EditText
@@ -98,6 +117,8 @@
         android:layout_centerInParent="true"
         android:layout_gravity="center"
         android:textSize="25dp"
+        android:textStyle="bold"
+
         />
 
     <EditText
@@ -115,7 +136,7 @@
 
     <Button
         android:id="@+id/registerBtn"
-        android:layout_width="wrap_content"
+        android:layout_width="170dp"
         android:layout_height="wrap_content"
         android:text="Register"
         android:layout_centerHorizontal="true"
@@ -124,7 +145,11 @@
         android:layout_gravity="center"
         android:textSize="30dp"
         android:onClick="onRegisterClicked"
+        android:background="@drawable/mybutton"
+        android:textAppearance="@style/NewCourseColorHint"
         />
 
 
 </LinearLayout>
+
+</RelativeLayout>

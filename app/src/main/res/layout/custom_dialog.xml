@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <EditText
+            android:id="@+id/time_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/time_pick"
+            android:textAlignment="center"
+            android:inputType="time"
+            android:focusedByDefault="false"/>
+
+        <EditText
+            android:id="@+id/date_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/date"
+            android:layout_below="@id/time_input"
+            android:textAlignment="center"
+            android:inputType="date"
+            android:focusedByDefault="false"
+            />
+
+        <EditText
+            android:id="@+id/amount_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/amount_g"
+            android:layout_below="@id/date_input"
+            android:textAlignment="center"
+            android:inputType="numberDecimal"
+            android:focusedByDefault="true"/>
+
+        <Button
+            android:id="@+id/submit_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/amount_input"
+            android:layout_marginRight="3dp"
+            android:text="Submit"/>
+        <Button
+            android:id="@+id/cancel_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/amount_input"
+            android:layout_toEndOf="@id/submit_btn"
+            android:text="Cancel"/>
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

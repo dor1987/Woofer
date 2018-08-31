@@ -21,36 +21,40 @@
         android:layout_height="70dp"
            android:layout_gravity="center">
 
-        <ImageButton
+        <ImageView
             android:id="@+id/cameraBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/camerabtn"
+            android:src="@drawable/camera_icon"
             android:scaleType="fitCenter"
             android:adjustViewBounds="true"
-            android:contentDescription="TODO"
-            ></ImageButton>
+            android:layout_toLeftOf="@id/videoBtn"
+            android:padding="10dp"
+            android:layout_marginRight="5dp"
+            />
 
-        <ImageButton
+        <ImageView
             android:id="@+id/videoBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/videobtn"
-            android:scaleType="fitCenter"
-            android:adjustViewBounds="true"
-            android:contentDescription="TODO"
-            android:layout_toRightOf="@+id/cameraBtn"
-            ></ImageButton>
+            android:src="@drawable/video_icon"
 
-        <ImageButton
+            android:adjustViewBounds="true"
+            android:layout_centerHorizontal="true"
+            android:padding="10dp"
+             />
+
+        <ImageView
             android:id="@+id/micBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/micbtn"
+            android:src="@drawable/sound_icon"
             android:scaleType="fitCenter"
             android:adjustViewBounds="true"
             android:contentDescription="TODO"
+            android:padding="10dp"
             android:layout_toRightOf="@+id/videoBtn"
+            android:layout_marginLeft="5dp"
             />
 
 

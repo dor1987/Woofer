@@ -1,0 +1,22 @@
+
+\squid:S1068,"9Remove this unused "dogAnalyticsFragments" private field.(•Å¦şÿÿÿÿ8ÀË‘…Ø,
+tsquid:S1450 "VRemove the "toolbar" field and declare it as a local variable in the relevant methods.(ş®º—8ÀË‘…Ø,
+{squid:S1450""]Remove the "navigationView" field and declare it as a local variable in the relevant methods.(‰Ë”ë8ÀË‘…Ø,
+xsquid:S1450%"URemove the "toggle" field and declare it as a local variable in the relevant methods.(½¥ïÜúÿÿÿÿ8ÀË‘…Ø,
+zsquid:S1450("WRemove the "fragment" field and declare it as a local variable in the relevant methods.(í‰óôûÿÿÿÿ8ÀË‘…Ø,
+‡squid:S1450,"dRemove the "dogAnalyticsFragments" field and declare it as a local variable in the relevant methods.(•Å¦şÿÿÿÿ8ÀË‘…Ø,
+jsquid:CommentedOutCodeLine€"<This block of commented-out lines of code should be removed.(…»Ûè8ÀË‘…Ø,
+jsquid:CommentedOutCodeLineš"<This block of commented-out lines of code should be removed.(˜ôÍ8ÀË‘…Ø,
+Msquid:S19056"*Remove this unnecessary cast to "Toolbar".(«ó·øÿÿÿÿ8ÀË‘…Ø,
+Rsquid:S19058"/Remove this unnecessary cast to "DrawerLayout".(È–œ¼úÿÿÿÿ8ÀË‘…Ø,
+Tsquid:S1905?"1Remove this unnecessary cast to "NavigationView".(ÜÒ…•ûÿÿÿÿ8ÀË‘…Ø,
+Ksquid:S1481£"'Remove this unused "id" local variable.(ªÙğúÿÿÿÿ8ÀË‘…Ø,
+msquid:S00100c"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(É£Ì 8ÀË‘…Ø,
+nsquid:S00100“"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(½³§8ÀË‘…Ø,
+nsquid:S00100˜"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ïÃ™†8ÀË‘…Ø,
+Esquid:S1185^"(Remove this method to simply inherit it.(ºŠñ=8ÀË‘…Ø,
+Zsquid:S1854£"6Remove this useless assignment to local variable "id".(ªÙğúÿÿÿÿ8ÀË‘…Ø,
+ysquid:S00116$"ZRename this field "CurrentFragment" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¸Òƒê8ÀË‘…Ø,
+xsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÚÊºB8ÀË‘…Ø,
+dsquid:UselessImportCheck"4Remove this unused import 'android.graphics.Canvas'.(õ«•üÿÿÿÿ8ÀË‘…Ø,
+qsquid:MaximumInheritanceDepth"<This class has 7 parents which is greater than 5 authorized.(†…Äúÿÿÿÿ8ÀË‘…Ø,
