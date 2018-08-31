@@ -1,0 +1,63 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="a1door.woofer.View.Fragments.DogListFragment">
+
+ <RelativeLayout
+     android:layout_width="match_parent"
+     android:layout_height="match_parent">
+
+     <TextView
+         android:id="@+id/title"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Dog's analytics"
+         android:textSize="34sp"
+         android:textStyle="bold"
+         android:textColor="@color/black"
+         android:layout_centerHorizontal="true"
+         android:paddingTop="15dp"/>
+
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Which dog would you like to check?"
+         android:textSize="22sp"
+         android:textStyle="bold"
+         android:gravity="center"
+         android:layout_below="@id/title"
+         android:textColor="@color/black"
+         android:textAlignment="gravity"
+        android:id="@+id/title2"
+         android:layout_centerHorizontal="true"
+         android:paddingTop="15dp"/>
+
+     <Button
+         android:layout_width="150dp"
+         android:layout_height="80dp"
+         android:id="@+id/Luka"
+         android:text="Luka"
+         android:textSize="24sp"
+         android:layout_marginTop="30dp"
+         android:layout_below="@id/title2"
+         android:layout_centerHorizontal="true"
+         android:layout_centerVertical="true"
+      />
+
+     <Button
+         android:layout_width="150dp"
+         android:layout_height="80dp"
+         android:id="@+id/Nala"
+         android:text="Nala"
+         android:layout_below="@id/Luka"
+         android:textSize="24sp"
+         android:layout_marginTop="30dp"
+         android:layout_centerHorizontal="true"
+         android:layout_centerVertical="true"
+         />
+
+
+ </RelativeLayout>
+
+</FrameLayout>
