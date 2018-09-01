@@ -8,6 +8,14 @@
      android:layout_width="match_parent"
      android:layout_height="match_parent">
 
+     <ImageView
+         android:layout_width="300dp"
+         android:layout_height="200dp"
+         android:src="@drawable/doglist"
+         android:layout_centerHorizontal="true"
+         android:layout_alignParentBottom="true"
+         />
+
      <TextView
          android:id="@+id/title"
          android:layout_width="wrap_content"
@@ -38,12 +46,15 @@
          android:layout_height="80dp"
          android:id="@+id/Luka"
          android:text="Luka"
-         android:textSize="24sp"
+         android:textSize="30sp"
+         android:textAppearance="@style/NewCourseColorHint"
          android:layout_marginTop="30dp"
          android:layout_below="@id/title2"
          android:layout_centerHorizontal="true"
          android:layout_centerVertical="true"
-      />
+         android:background="@drawable/mybutton"
+
+         />
 
      <Button
          android:layout_width="150dp"
@@ -51,10 +62,13 @@
          android:id="@+id/Nala"
          android:text="Nala"
          android:layout_below="@id/Luka"
-         android:textSize="24sp"
+         android:textSize="30sp"
+         android:textAppearance="@style/NewCourseColorHint"
          android:layout_marginTop="30dp"
          android:layout_centerHorizontal="true"
          android:layout_centerVertical="true"
+         android:background="@drawable/mybutton"
+
          />
 
 
